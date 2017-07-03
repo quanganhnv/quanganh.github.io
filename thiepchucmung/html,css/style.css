@@ -2,9 +2,7 @@ body {
     background-image: url("../img/images.jpg");
     background-size: cover;
 }
-.wrap{
-	position: relative;
-}
+
 h1{
 	color: red;
 	position: absolute;
@@ -44,8 +42,7 @@ h2 {
 	position: fixed;
 	top: 0px;
 }
-body { background-color:#333; }
-#snow{
+#snow {
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
