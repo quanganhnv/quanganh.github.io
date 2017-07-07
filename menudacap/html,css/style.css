@@ -1,80 +1,160 @@
 *{
 	box-sizing: border-box;
-	font-family: Arial;
+	
 }
+/*==BODY==*/
 body {
 	background-color: #E6E6FA;
 	line-height: 20px;
+	font-family: Arial;
+
 }
-.wrap{
+
+.wrap{ 
 	margin: auto;
-	max-width: 1200px;
+	max-width:1200px;
+
 }
+
 .banner img{
 	text-align: center;
 	margin: auto;
 	width: 1200px;
 	height: 400px;
 }
+
 .logo img {	
 	position: absolute;
 	top:11px;
 }
-#menu > li > ul {
+
+/*==Menu==*/
+#menu ul {
+	list-style-type: none;
+	background-color:#D8BFD8;
+}
+
+#menu ul li {
+	display: inline-block;
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+
+#menu ul li  ul {
 	list-style-type: none;
 	display: none;
+	text-align: center;
 }
-#menu > li:hover > ul {
+
+#menu ul li > .submenu {
+	display: none;
+	position: absolute;
+}
+
+#menu ul li:hover  ul {
 	display: block;
 }
-a {
+
+#menu a {
 	text-decoration: none;
 	font-size: 30px;
 	color: #737373;
+	display: block;
 }
-#menu > li {
-	float: left;
-	padding: 10px;
-	list-style: none;
-	width: 280px;
+
+#menu a:hover, a:visited {
+	background:#f1f1f1;
+	color: #333;
 }
 #menu {
 	background-color:#E6E6FA;
 	text-align: center;
-
 }
-h3{
-	margin-top: 75px;
-	text-align: center;
-	font-size: 30px;
-
+/*==PR==*/
+.col img {
+	width: 450px;
+	height: 350px;
+	border-radius:15px;
 }
-p{
-	font-size: 20px;
+#trich {
+	float: right;
 }
-p.trich {
-	text-align: right;
+.pr .monan {
+	overflow: hidden;
+	margin: auto;
+	padding-top: 35px;
 }
-
-.pr {
+.pr .col {
 	float: left;
-	position: relative;
+	width: 50%;
+	padding: 30px;
 }
-.thumb1 {
-	position: fixed;
-	left: 365px;
-	top: 550px;
+
+.monan .col2{
+	display: block;
+	text-align: center;
 }
-.thumb2 {
-	position:fixed; 
-	left: 900px;
-	width: 600px;
-	
+#box1 {
+    padding-top: 52px;
 }
-.thumb1 img {
-	width: 400px;
-	height: 300px;
+#box4 img {
+	width: 300px;
+	height: 200px;
 	border-radius: 15px;
 }
-.
 
+.dish{
+	float: left;
+	width: 33.33%;
+}
+
+h4 {
+	margin: 0px;
+}
+
+
+img {
+	opacity: 1;
+	transition:opacity 5s ease linear;
+}
+
+.monan img:hover {
+	opacity: 0.8;
+}
+.col img:hover {
+	opacity: 0.8;
+}
+
+.monan{
+	padding-left:  30px;
+}
+#box3 h3{
+	text-align: center;
+	padding: 30px;
+}
+#box4 h4 {
+	padding-top: 20px;
+}
+/*==fadeinout==*/
+.fadeinout h3{
+	padding-bottom: 50px;	
+	text-align: left;
+	animation: fadeinout 10s ease infinite;
+}
+@keyframes fadeinout {
+ 	50%{
+ 		color: blue;
+ 		opacity: 1;
+ 	}
+ 	0%,100%{
+ 		opacity: 0;
+
+ 	}
+ 	0%{
+ 		transform: translate(0,0);
+ 	}
+ 	100%{
+ 		transform: translate(87%,0);
+ 	}

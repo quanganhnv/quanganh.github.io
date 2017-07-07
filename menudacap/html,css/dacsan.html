@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đặc sản</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #E6E6FA;
+			line-height: 20px;
+			font-family: Arial;
+
+		}
+
+		.wrap{ 
+			margin: auto;
+			max-width:1200px;
+
+		}
+		
+		.banner img{
+			text-align: center;
+			margin: auto;
+			width: 1200px;
+			height: 400px;
+		}
+
+		.logo img {	
+			position: absolute;
+			top:11px;
+		}
+		.mon img {
+			width: 300px;
+			height: 200px;
+			border-radius: 15px;
+			opacity: 1;
+		}
+		.mon img:hover{
+			opacity: 0.8;
+		}
+		.mon {
+			float: left;
+			width: 33.33%;
+			padding-top:15px;
+			padding-left: 45px;
+		}
+		.fadeinout h3{
+			padding-bottom: 50px;	
+			text-align: left;
+			animation: fadeinout 10s ease infinite;
+		}
+		@keyframes fadeinout {
+			50%{
+
+				opacity: 1;
+			}
+			0%,100%{
+				opacity: 0;
+
+			}
+			0%{
+				transform: translate(0,0);
+			}
+			100%{
+				transform: translate(87%,0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="banner"> 
+				<img src="../img/banner.JPG">
+			</div>
+			<div class="logo">
+				<img src="../img/image1.png">
+			</div>
+			<h1 style="text-align: center;">Đặc sản</h1>
+			<div>
+				<p> <strong> Nhà hàng Quá Ngon </strong> –  nổi tiếng chuyên phục vụ các món đặc sản hiếm, độc, lạ. Tất cả đều được chế biến rất ngon, hấp dẫn, độc đáo từ những đầu bếp chuyên phục vụ các món đặc sản . Điều đặc biệt là chế biến không dùng dầu tái sinh, phẩm màu, an toàn vệ sinh tuyệt đối. Còn gì thú vị bằng thưởng thức các món ngon đặc sản trong một không gian thoáng đẹp, ấm cúng đem đến cho thực khách những trải nghiệm  cộng hưởng đầy ấn tượng , hưng phấn, khó quên.</p>
+			</br>
+
+			<p>Phong cách phục vụ chuyên nghiệp giá cả hợp lý, thức ăn chế biến hợp vị sinh không dùng phẩm chất và phẩm màu trong thức ăn. Các món ăn đặc sản nổi bật tại nhà hàng như: Heo tộc quay lu chặt mẹt ngon <strong> số 1 tại Hà Nội </strong>, món gà đông tảo tiềm thuốc bắc nhiều dưỡng chất, Ba ba nướng muối ớt hoặc tiềm thuốc bắc ngon khổng chê, các món ăn ngon làm từ gà nồi,…</p>
+		</br>
+
+		<p>Xin mời Quý thực khách cùng thưởng thức những món ăn đặc sản nổi tiếng tại <strong> Nhà hàng Quá Ngon </strong>.</p>
+	</div>	
+	<h2 style="text-align: center;">Các món</h2>
+	<div class="monan">
+		<div class="mon">
+			<a style="text-decoration: none;color: red" href="mon1.html">
+				<h3>Heo tộc lu quay chặt mẹt</h3>
+				<img src="../img/image3.jpg">
+			</a>
+		</div>
+		<div class="mon">
+			<a style="text-decoration: none;color: red" href="mon2.html">
+				<h3>Ba ba nấu chuối</h3>
+				<img src="../img/image4.jpg">
+			</a>
+		</div>
+		<div class="mon">
+			<a style="text-decoration: none;color: red" href="mon3.html">
+				<h3>Gà đông tảo hầm sâm</h3>
+				<img src="../img/image2.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="fadeinout">
+		<h3>Nhà Hàng quán ngon</h3>
+	</div>
+</div>	
+</body>

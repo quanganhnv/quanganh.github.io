@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thực đơn</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+	box-sizing: border-box;
+	}
+
+	body {
+	background-color: #E6E6FA;
+	line-height: 20px;
+	font-family: Arial;
+
+	}
+
+	.wrap{ 
+	margin: auto;
+	max-width:1200px;
+
+	}
+	
+	.banner img{
+	text-align: center;
+	margin: auto;
+	width: 1200px;
+	height: 400px;
+	}
+
+	.logo img {	
+	position: absolute;
+	top:11px;
+	}
+	.muc {
+		float: left;
+		width: 33.33%;
+		padding: 35px;
+	}
+	.fadeinout h3{
+	padding-bottom: 50px;	
+	text-align: left;
+	animation: fadeinout 10s ease infinite;
+	}
+	@keyframes fadeinout {
+ 	50%{
+
+ 		opacity: 1;
+ 	}
+ 	0%,100%{
+ 		opacity: 0;
+
+ 	}
+ 	0%{
+ 		transform: translate(0,0);
+ 	}
+ 	100%{
+ 		transform: translate(87%,0);
+ 	}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="banner"> 
+			<img src="../img/banner.JPG">
+		</div>
+		<div class="logo">
+			<img src="../img/image1.png">
+		</div>
+		<h1 style="text-align: center;">
+			Thực đơn 
+		</h1>
+		<div class="danhmuc">
+			<div class="muc">
+			<a href="dacsan.html">
+				<img src="../img/dacsan.jpg">
+			</a>
+		</div>
+		<div class="muc">
+			<a href="haisan.html">
+				<img src="../img/haisan.jpg">
+			</a>
+		</div>
+		<div class="muc">
+			<a href="dangian.html">
+				<img src="../img/dangian.jpg">
+			</a>
+		</div>
+		<div class="fadeinout">
+			<h3>Nhà Hàng quán ngon</h3>
+		</div>
+	</div>
+
+</body>
