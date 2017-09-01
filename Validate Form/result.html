@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng ký thành công </title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="title">Đăng ký thành công</h1>
+    	<div id="information"></div>
+	<script>
+	var information = document.getElementById("information");
+	  var add = window.location.search;
+	 var account = decodeURIComponent(add);
+	   account  =account  .replace("?","");
+	  account  = account .replace(/\+/g," ");
+	    account  = account .replace(/=/g,": ");
+	   account  = account .split("&");
+	    for(var i = 0; i<account .length-1; i++){
+	        information.innerHTML += account [i] +"</br>";
+	    }
+</script>
+   	</body>
+</html>
