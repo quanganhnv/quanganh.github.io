@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:#8fcdf3;
+}
+h1{
+	text-align: center;
+	color: #daecd6;
+}
+
+.wrap{
+	text-align: center;
+	margin: auto;
+	width: 1250px;
+}
+.card img {
+	width: 100%;
+}
+.card {
+	position: relative;
+	height: 300px;
+	width: 200px;
+	margin: 10px 0 0px 50px;
+	display: inline-block;
+	position: relative;
+}
+.card img:hover { 
+  /*transform: scale(1.2);*/
+  opacity: 0.7;
+  /*filter: grayscale(0%);*/
+}
+.flip{
+  transform: rotateY(180deg);
+}
+.back, .front{
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
