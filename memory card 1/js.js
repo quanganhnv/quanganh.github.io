@@ -1,45 +1,45 @@
 //Gọi hàm tạo thẻ bài
-imageNumber = 10; 
+cardNumber = 5; 
 
-pics = ImageArray(imageNumber);
+cards = ImageArray(cardNumber);
 
-function ImageArray(imageNumber) {
+function ImageArray(cardNumber) {
 
 	var imagesArray = [];
 
-	for (i=0; i< imageNumber; i++) {
-		var imageObj = {
-			_src: "img/img0" + String(Math.floor(i/2)) + ".jpg",
-			_alt: ""
+	for (i=0; i< cardNumber; i++) {
+		var image = {
+			src: "img/img0" + i + ".jpg",
 		};
 
-		imagesArray.push(imageObj);
+		imagesArray.push(image);
 	}
-
-	return shuffle(imagesArray);
-
-}
-//Sử dụng vòng lặp tạo thẻ bài
-var img = document.getElementById("photos");
-
-for(var i=0; i<pics.length; i++){
+	//Hàm nhân đôi mảng	
+	imagesArray= imagesArray.concat(imagesArray)
 	
-	var card = document.createElement("div");
-	var front = document.createElement("img");
-	var back = document.createElement("img");
-
-	card.className = "card";
-	front.src = pics[i]._src;
-	front.className = "front";
-	front.alt = pics[i]._alt;
-	back.src = "img/backcard.jpg";
-	back.className = "back";
-
-	card.appendChild(front);
-	card.appendChild(back);
-	img.appendChild(card);
+	return shuffle (imagesArray);
 
 }
+	//Sử dụng vòng lặp tạo thẻ bài
+	var img = document.getElementById("image");
+
+	for(var i=0; i<cards.length; i++){
+
+		var card = document.createElement("div");
+		var front = document.createElement("img");
+		var back = document.createElement("img");
+
+		card.className = "card";
+		front.src = cards[i].src;
+		front.className = "front";
+		back.src = "img/backcard.jpg";
+		back.className = "back";
+
+		card.appendChild(front);
+		card.appendChild(back);
+		img.appendChild(card);
+
+	}
 // Lật bài
 var card = $(".card");
 
