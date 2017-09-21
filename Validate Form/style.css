@@ -1,0 +1,46 @@
+body {
+			box-sizing: border-box;
+			margin: auto;
+			background: #88cbf7;
+			font-family: 'Roboto Slab ' ,serif;
+			background-image: url(http://www.hqwalls.com/wp-content/uploads/2016/02/Beautiful-places-on-Earth-10.jpg)
+		}
+
+		.wrap {
+			position: absolute;
+			top: 9%;
+			left: 40%;
+			border: 1px solid #ddd;
+			width: 350px;
+			background: rgba(86, 80, 80, 0.45);
+			height: 745px;	
+
+		}
+		form{
+			position: relative;
+			left: 4%;	
+		}	
+		.information input{
+			font-size: 20px;
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 294px;
+		}
+		.birthday {
+			font-size: 25px;
+		}
+
+		select {
+		font-size: 22px;
+	    width: 80px;
+	    margin-left: 15px;
+	    margin-top: 10px;
+	    color: #555;
+	    border: 2px solid #2c949a;
+		}
+		option{
+
+		}
+		.Gender {
+			font-size: 25px;
+		}
