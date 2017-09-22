@@ -43,7 +43,7 @@ var arr = [
 	NumberProduct:'15',},
 {
 	STT:'7',
-	Image:'img/image7.jpg',
+	Image:'img/image7.JPG',
 	Name:'LG G3 32GB BLACK ',
 	Cost:'11.990.000 ',
 	NumberProduct:'6',},
@@ -66,7 +66,6 @@ for( var i = 0; i < product.length; i++){
 };
 row = row + "</tr>";
 $('thead').append(row);
-
 
 for(var i = 0;i<arr.length;i++){
 	var	row = arr[i];
