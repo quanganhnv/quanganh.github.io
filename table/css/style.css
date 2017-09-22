@@ -1,0 +1,47 @@
+body{
+    background-color: rgba(236, 213, 193, 0.61);;
+}
+#wrap{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table, th, tr, td{
+    text-align: center;
+    border: 1px solid #ff8e8e;;
+}
+tr {
+    transition all 0.5s ease-in-out;
+    max-height: 160px;
+}
+th {
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+tr>th:first-child{
+    width: 100px;
+}
+tr>td:first-child {
+    padding: 5px;
+}
+tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(243, 101, 101);
+
+}
+.headerSortDown{
+    background-image: url("sortdown.jpg") ;
+    background-repeat: no-repeat;
+}
+.headerSortUp{
+    background-image: url("sortup.jpg") ;
+    background-repeat: no-repeat;
+}
+td img {
+    height: 150px;
+}
