@@ -1,0 +1,2 @@
+1. File notepad đang bị lỗi cấu trúc PE file, Hãy sửa lại để file thực thi được.
+2. Viết chương trình đọc thông tin PE file: EntryPoint, ImageBase, Số section, VirtualAdd, VirtualSize, RawAdd, RawSize của từng section.
